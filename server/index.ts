@@ -44,7 +44,7 @@ const distPath = path.resolve(process.cwd(), 'dist');
 if (fs.existsSync(distPath)) {
   console.log(`[Server] Serving static frontend build from: ${distPath}`);
   app.use(express.static(distPath));
-  app.get('*', (req, res, next) => {
+  app.use((req, res, next) => {
     if (req.path.startsWith('/api') || req.path.startsWith('/ws') || req.path === '/health') {
       return next();
     }
