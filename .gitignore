@@ -26,6 +26,10 @@ yarn-error.log*
 pnpm-debug.log*
 *.log
 
+# Personal local documentation
+SYSTEM_DESIGN_AND_ARCHITECTURE.md
+CLACK_*.md
+
 # Editor & OS files
 .DS_Store
 Thumbs.db

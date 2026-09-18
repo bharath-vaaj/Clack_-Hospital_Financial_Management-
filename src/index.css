@@ -63,6 +63,10 @@
   --text-secondary: #8A93A6;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Manrope', 'Inter', sans-serif;
   font-feature-settings: 'tnum' 1, 'cv02' 1, 'cv03' 1, 'cv04' 1;
