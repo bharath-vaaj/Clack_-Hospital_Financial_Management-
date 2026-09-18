@@ -140,29 +140,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onNavigateToAuth }) =>
             Precision Financial Governance for Modern <span className="bg-gradient-to-r from-sage-600 via-sage-500 to-teal-500 bg-clip-text text-transparent">Hospital Systems</span>.
           </motion.h1>
 
-          {/* Problem Statement (Short 2 Lines) */}
-          <motion.div
-            initial={{ opacity: 0, y: 15 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="max-w-3xl mx-auto bg-paper-100/70 dark:bg-ink-900/60 border border-paper-200/80 dark:border-ink-800/80 rounded-2xl p-5 shadow-sm backdrop-blur-sm"
-          >
-            <div className="flex items-center justify-center gap-2 text-[11px] font-bold text-amber-500 dark:text-amber-400 uppercase tracking-widest mb-1.5">
-              <ShieldAlert className="w-3.5 h-3.5" />
-              The Industry Problem
-            </div>
-            <p className="text-sm sm:text-base text-slate-700 dark:text-slate-300 font-medium leading-relaxed">
-              Hospitals lose millions to fragmented ledgers, unmapped departmental receipts, and audit blindspots.
-              <br className="hidden sm:inline" />
-              <strong className="text-ink-950 dark:text-paper-50 font-semibold"> Clack unifies daily expense ingestion, strict 4-level chart-of-accounts governance, and natural-language AI intelligence into a single auditable ledger.</strong>
-            </p>
-          </motion.div>
-
           {/* Primary Action Buttons */}
           <motion.div
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
             className="flex flex-wrap items-center justify-center gap-4 pt-2"
           >
             <button
