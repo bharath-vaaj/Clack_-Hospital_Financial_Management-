@@ -6,8 +6,8 @@
     "dev": "concurrently -k -n \"server,client\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
     "server": "tsx watch server/index.ts",
     "client": "vite --port 5173",
-    "build": "vite build",
-    "start": "tsx server/index.ts",
+    "build": "vite build && esbuild server/index.ts --bundle --platform=node --target=node18 --outfile=dist-server/index.cjs --packages=external",
+    "start": "node --max-old-space-size=384 dist-server/index.cjs",
     "preview": "vite preview"
   },
   "keywords": [],
@@ -35,6 +35,7 @@
     "concurrently": "^10.0.5",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
+    "esbuild": "^0.25.0",
     "express": "^5.2.1",
     "framer-motion": "^13.2.0",
     "lucide-react": "^1.43.0",

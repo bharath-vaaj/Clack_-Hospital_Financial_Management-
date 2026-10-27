@@ -6,6 +6,7 @@ node_modules/
 # Production build output
 dist/
 dist-ssr/
+dist-server/
 
 # Environment files and secrets (NEVER commit to GitHub!)
 .env
